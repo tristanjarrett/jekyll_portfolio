@@ -2,20 +2,15 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    header.global {
-      padding: 1.5rem 0;
-      border-bottom: 2px solid #f0f0f0;
-      box-shadow: 1px 2px 10px rgba(0,0,0,.03);
-    }
-    main.global {
-      padding: 1rem 0;
-    }
-    footer.global {
-      padding: 1rem 0;
-      color: #666;
-    }
-  </style>
+  <title>
+    {% if page.layout == "post" %}
+      {{ page.title }} - {{ site.title }}
+    {% elsif page.layout == "page" %}
+      {{ page.title }} - {{ site.title }}
+    {% else %}
+      {{ site.title }} - {{ site.description }}
+    {% endif %}
+  </title>
+  <link rel="stylesheet" href="/assets/styles/primitive.css">
+  <link rel="stylesheet" href="/assets/styles/main.css">
 </head>

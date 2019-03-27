@@ -1,0 +1,19 @@
+/* Pre Sass Mockup */
+
+/* header */
+.tj_site_header {
+  padding: 1.25rem 0;
+  border-bottom: 2px solid #f0f0f0;
+  box-shadow: 1px 2px 10px rgba(0,0,0,.03);
+}
+.tj_flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* footer */
+.tj_site_footer {
+  padding: 1rem 0;
+}
