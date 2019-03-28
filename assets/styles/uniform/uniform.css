@@ -257,8 +257,7 @@ blockquote {
 .button-sm, .button-md, .button-lg {
   border-radius: 0.25rem;
   text-decoration: none;
-  display: inline-block;
-  font-weight: bold; }
+  display: inline-block; }
 
 .button-sm:hover, .button-md:hover, .button-lg:hover {
   text-decoration: none; }
