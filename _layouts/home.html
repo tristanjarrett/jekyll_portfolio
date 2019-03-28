@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<main class="home_format">
+<main class="template_home">
   <div class="container-sm">
 
     {%- if page.title -%}
@@ -11,23 +11,15 @@ layout: default
 
     {{ content }}
 
-    {%- if site.posts.size > 0 -%}
-      <h2>{{ page.list_title | default: "Posts" }}</h2>
-      <ul>
-        {%- for post in site.posts -%}
-        <li>
-          <h3>
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
+    <h2>Posts</h2>
+    <hr>
+    <ul class="list-unstyled">
+      {%- for post in site.posts -%}
+      <li>
+        <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+      </li>
+      {%- endfor -%}
+    </ul>
 
   </div>
 </main>

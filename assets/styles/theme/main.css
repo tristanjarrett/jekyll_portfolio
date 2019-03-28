@@ -23,4 +23,22 @@
 .global_footer {
   padding: 1rem 0; }
 
+/**
+ * Home
+ */
+.template_home {
+  padding: 1rem 0; }
+
+/**
+ * Page
+ */
+.template_page {
+  padding: 1rem 0; }
+
+/**
+ * Post
+ */
+.template_post {
+  padding: 1rem 0; }
+
 /*# sourceMappingURL=main.css.map */

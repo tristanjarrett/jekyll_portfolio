@@ -54,22 +54,22 @@ hr {
     border: solid 1px #0062cc; }
 
 .button-secondary {
-  background-color: #e8e9ec;
+  background-color: #404040;
   color: #404040;
-  border: solid 1px #e8e9ec; }
+  border: solid 1px #404040; }
   .button-secondary:hover {
     color: #404040;
-    background-color: #ccced5;
-    border: solid 1px #ccced5; }
+    background-color: #272727;
+    border: solid 1px #272727; }
 
 .button-secondary-outline {
   background-color: none;
-  color: #e8e9ec;
-  border: solid 1px #e8e9ec; }
+  color: #404040;
+  border: solid 1px #404040; }
   .button-secondary-outline:hover {
     color: #404040;
-    background-color: #ccced5;
-    border: solid 1px #ccced5; }
+    background-color: #272727;
+    border: solid 1px #272727; }
 
 body {
   font-family: sans-serif;
@@ -143,9 +143,6 @@ blockquote {
     font-size: 1rem;
     text-align: right;
     color: #737373; }
-
-.d-flex {
-  display: flex !important; }
 
 .align-items-start {
   align-items: flex-start !important; }
@@ -370,14 +367,17 @@ blockquote {
 .float-right {
   float: right; }
 
-.block {
-  display: block; }
+.d-block {
+  display: block !important; }
 
-.inline-block {
-  display: inline-block; }
+.d-inline-block {
+  display: inline-block !important; }
 
-.inline {
-  display: inline; }
+.d-inline {
+  display: inline !important; }
+
+.d-flex {
+  display: flex !important; }
 
 .text-left {
   text-align: left; }

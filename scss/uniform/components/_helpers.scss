@@ -9,14 +9,17 @@
 
 // Display
 
-.block {
-  display: block;
+.d-block {
+  display: block !important;
 }
-.inline-block {
-  display: inline-block;
+.d-inline-block {
+  display: inline-block !important;
 }
-.inline {
-  display: inline;
+.d-inline {
+  display: inline !important;
+}
+.d-flex {
+  display: flex !important;
 }
 
 // Text
