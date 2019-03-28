@@ -15,10 +15,7 @@
     .global_header ul li {
       list-style-type: none;
       display: inline-block;
-      font-size: 1.15rem;
-      margin-left: 1rem; }
-      .global_header ul li a {
-        color: #333; }
+      margin-left: 0.75rem; }
 
 /**
  * Footer
