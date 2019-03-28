@@ -1,11 +1,13 @@
-@import url(../primitive.css);
 /**
  * Header
  */
 .global_header {
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
   border-bottom: 2px solid #f0f0f0;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.03); }
+  .global_header img {
+    height: 50px;
+    width: auto; }
   .global_header ul {
     margin: 0;
     padding: 0;
@@ -17,6 +19,8 @@
       margin-left: 1rem; }
       .global_header ul li a {
         color: #333; }
+        .global_header ul li a:hover {
+          text-decoration: underline; }
 
 /**
  * Footer

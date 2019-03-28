@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACQ,6BAAkB;ACD1B;;GAEG;AACH,cAAe;EACb,OAAO,EAAE,SAAS;EAClB,aAAa,EAAE,iBAAiB;EAChC,UAAU,EAAE,gCAA4B;EACxC,iBAAG;IACD,MAAM,EAAE,CAAC;IACT,OAAO,EAAE,CAAC;IACV,UAAU,EAAE,KAAK;IACjB,oBAAG;MACD,eAAe,EAAE,IAAI;MACrB,OAAO,EAAE,YAAY;MACrB,SAAS,EAAE,OAAO;MAClB,WAAW,EAAE,IAAI;MACjB,sBAAE;QACA,KAAK,EAAE,IAAI;;ACjBnB;;GAEG;AACH,cAAe;EACb,OAAO,EAAE,MAAM",
-"sources": ["../scss/main.scss","../scss/global/_header.scss","../scss/global/_footer.scss"],
-"names": [],
-"file": "main.css"
-}
