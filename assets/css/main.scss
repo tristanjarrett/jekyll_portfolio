@@ -1,8 +1,15 @@
-// Theme Style
-@import "global/base";
+---
+# Include Sass
+---
+
+// Import Uniform
+@import "../uniform/uniform";
+
+// Global Imports
 @import "global/header";
 @import "global/footer";
 
+// Page Imports
 @import "pages/home";
 @import "pages/page";
 @import "pages/post";
