@@ -1,16 +1,16 @@
 ---
-# Include Sass
+# Front matter to include Sass
 ---
 
 // Import Uniform
 @import "../uniform/uniform";
 
-// Global Imports
+// Global Templates
 @import "global/base";
 @import "global/header";
 @import "global/footer";
 
-// Page Imports
+// Page Templates
 @import "pages/home";
 @import "pages/page";
 @import "pages/post";
