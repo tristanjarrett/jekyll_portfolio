@@ -11,15 +11,25 @@ layout: default
 
     {{ content }}
 
-    <h2>Posts</h2>
-    <hr>
-    <ul class="list-unstyled">
-      {%- for post in site.posts -%}
-      <li>
-        <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
-      </li>
-      {%- endfor -%}
-    </ul>
+    <div class="posts_section">
+      <h3>Posts</h3>
+      <ul class="list-unstyled">
+        {%- for post in site.posts -%}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
+    <div class="projcts_section">
+      <h3>Projects</h3>
+      <ul class="list-unstyled">
+        <li>
+          <a href="https://github.com/tristanjarrett/uniform">Unifrom UI</a>
+        </li>
+      </ul>
+    </div>
 
   </div>
 </main>

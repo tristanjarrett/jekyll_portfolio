@@ -2,5 +2,28 @@
  * Home
  */
 .template_home {
+  %list_layout {
+    ul {
+      li {
+        font-size: 1.25rem;
+        a {
+          display: block;
+          padding: 1rem;
+          border: 2px solid transparent;
+          border-radius: 0.25rem;
+          &:hover {
+            border: 2px solid $color-primary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
   padding: 1rem 0;
+  .posts_section {
+    @extend %list_layout;
+  }
+  .projcts_section {
+    @extend %list_layout;
+  }
 }
