@@ -7,6 +7,8 @@
       {{ page.title }} - {{ site.title }}
     {% elsif page.layout == "page" %}
       {{ page.title }} - {{ site.title }}
+    {% elsif page.layout == "error" %}
+      {{ page.title }} - {{ site.title }}
     {% else %}
       {{ site.title }} - {{ site.description }}
     {% endif %}

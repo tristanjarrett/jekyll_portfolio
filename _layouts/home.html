@@ -5,29 +5,27 @@ layout: default
 <main class="template_home">
   <div class="container-sm">
 
-    {%- if page.title -%}
-      <h1>{{ page.title }}</h1>
-    {%- endif -%}
-
-    {{ content }}
+    <div class="intro_section">
+      <h4>Hi, I'm Tristan. I build open source projects and write the missing instruction manuals of the web.</h4>
+      <p>I'm a developer, designer, and writer. I created this site to document everything I learn, and share a bit of myself with the world. My site is free and has no ads, affiliate links, or sponsored posts.</p>
+    </div>
 
     <div class="posts_section">
-      <h3>Posts</h3>
+      <h4>Posts</h4>
+      <hr>
       <ul class="list-unstyled">
         {%- for post in site.posts -%}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </li>
+        <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
         {%- endfor -%}
       </ul>
     </div>
 
     <div class="projcts_section">
-      <h3>Projects</h3>
+      <h4>Projects</h4>
+      <hr>
       <ul class="list-unstyled">
-        <li>
-          <a href="https://github.com/tristanjarrett/uniform">Unifrom UI</a>
-        </li>
+        <li><a href="https://github.com/tristanjarrett/uniform">Unifrom UI</a></li>
+        <li><a href="https://github.com/tristanjarrett/tristanjarrett.com">This website</a></li>
       </ul>
     </div>
 

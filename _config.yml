@@ -1,6 +1,7 @@
 # Core settings
 title: Tristan Jarrett
 email: hi@tristanjarrett.com
+author: Tristan Jarrett
 description: Software Developer, Car Enthusiast & Coffeehead
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -8,7 +9,3 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Dev settings
 sass:
   sass_dir: assets/css
-
-# Theme settings
-github_user: tristanjarrett
-repo_url: https://www.github.com/tristanjarrett/tristanjarrett.com

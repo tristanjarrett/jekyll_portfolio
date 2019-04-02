@@ -5,15 +5,19 @@
   %list_layout {
     ul {
       li {
-        font-size: 1.25rem;
+        font-size: 1.20rem;
         a {
           display: block;
-          padding: 1rem;
+          padding: .75rem 1rem;
+          margin: 0 -1rem;
           border: 2px solid transparent;
-          border-radius: 0.25rem;
+          border-radius: .25rem;
+          color: #777 !important;
           &:hover {
             border: 2px solid $color-primary;
             text-decoration: none;
+            background-color: lighten($color-primary, 45%);
+            color: #000 !important;
           }
         }
       }
