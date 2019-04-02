@@ -6,9 +6,10 @@ layout: default
   <article class="container-sm">
 
     <header>
-      <h2>{{ page.title }}</h2>
+      <h2 class="mb-1">{{ page.title }}</h2>
+      <span>Written on {{ page.date | date: "%b %d, %Y" | escape }}</span>
       {%- if page.author -%}
-        <span>Written by {{ page.author | escape }} on {{ page.date | escape }}</span>
+        <span> by {{ page.author | escape }}</span>
       {%- endif -%}
       <hr>
     </header>

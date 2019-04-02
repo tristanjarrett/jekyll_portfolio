@@ -2,6 +2,11 @@
  * Home
  */
 .template_home {
+  %section_title {
+    border-bottom: solid 2px $border-color;
+    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
+  }
   %list_layout {
     ul {
       li {
@@ -23,9 +28,15 @@
   }
   padding: 1rem 0;
   .posts_section {
+    .title {
+      @extend %section_title;
+    }
     @extend %list_layout;
   }
   .projcts_section {
+    .title {
+      @extend %section_title;
+    }
     ul {
       li {
         justify-content: space-between;
