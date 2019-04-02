@@ -10,8 +10,11 @@
 @import "global/header";
 @import "global/footer";
 
+// Layout Templates
+@import "layouts/home";
+@import "layouts/error";
+@import "layouts/page";
+@import "layouts/post";
+
 // Page Templates
-@import "pages/home";
-@import "pages/error";
-@import "pages/page";
-@import "pages/post";
+@import "pages/contact";
