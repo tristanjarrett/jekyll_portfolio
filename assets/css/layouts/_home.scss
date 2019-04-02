@@ -28,6 +28,16 @@
     @extend %list_layout;
   }
   .projcts_section {
-    @extend %list_layout;
+    ul {
+      li {
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
