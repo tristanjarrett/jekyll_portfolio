@@ -70,7 +70,7 @@ a {
   &:active,
   &:focus {
     text-decoration: underline;
-    color: $color-primary-hover;
+    color: darken($color-primary, 10%);
   }
 }
 
