@@ -2,9 +2,17 @@
  * Contact
  */
 .page_contact {
+
+  .contact_section {
+    .title {
+      @extend %section_title;
+    }
+  }
+
   ul {
     li {
       margin-bottom: .5rem;
     }
   }
+
 }

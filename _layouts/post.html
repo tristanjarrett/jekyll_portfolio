@@ -3,10 +3,11 @@ layout: default
 ---
 
 <main class="template_post">
+
   <article class="container-sm">
 
     <header>
-      <h1 class="mb-1">{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
       <span>Posted {{ page.date | date: "%d %B %Y" | escape }}</span>
       {%- if page.author -%}
         <span> by {{ page.author | escape }}</span>
@@ -17,4 +18,5 @@ layout: default
     {{ content }}
 
   </article>
+
 </main>
