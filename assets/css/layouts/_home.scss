@@ -2,37 +2,15 @@
  * Home
  */
 .template_home {
-  %section_title {
-    border-bottom: solid 2px $border-color;
-    margin-bottom: 1.5rem;
-    padding-bottom: .5rem;
-  }
-  %list_layout {
-    ul {
-      li {
-        a {
-          display: block;
-          padding: .75rem 0;
-          border: 2px solid transparent;
-          border-radius: .25rem;
-          transition: .3s ease;
-          &:hover {
-            border: 2px solid $color-primary;
-            padding: .75rem 1rem;
-            text-decoration: none;
-            background-color: lighten($color-primary, 45%);
-          }
-        }
-      }
-    }
-  }
   padding: 1rem 0;
+
   .posts_section {
     .title {
       @extend %section_title;
     }
     @extend %list_layout;
   }
+
   .projcts_section {
     .title {
       @extend %section_title;
@@ -49,4 +27,5 @@
       }
     }
   }
+  
 }

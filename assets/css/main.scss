@@ -1,11 +1,12 @@
 ---
-# Front matter to include Sass
+# Front matter to include Sass in Jekyll
 ---
 
 // Import Uniform
 @import "../uniform/uniform";
 
 // Global Templates
+@import "global/extends";
 @import "global/base";
 @import "global/header";
 @import "global/footer";
@@ -17,4 +18,6 @@
 @import "layouts/post";
 
 // Page Templates
+@import "pages/articles";
+@import "pages/resume";
 @import "pages/contact";

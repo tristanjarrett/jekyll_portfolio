@@ -4,4 +4,36 @@ title: Articles
 permalink: /articles/
 ---
 
-Articles page
+<div class="page_articles">
+
+  <div class="topics_section">
+    <h4 class="title">Topic Categories</h4>
+    <ul>
+    {% assign categories_list = site.categories %}
+    {% if categories_list.first[0] == null %}
+      {% for category in categories_list %}
+        <li><a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a></li>
+      {% endfor %}
+    {% else %}
+      {% for category in categories_list %}
+        <li><a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
+      {% endfor %}
+    {% endif %}
+    {% assign categories_list = nil %}
+    </ul>
+  </div>
+
+  <div class="posts_section">
+    <h4 class="title">Articles</h4>
+    <ul class="list-unstyled">
+    {%- for post in site.posts -%}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </li>
+    {%- endfor -%}
+    </ul>
+  </div>
+
+</div>

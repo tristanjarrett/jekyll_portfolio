@@ -7,7 +7,7 @@ layout: default
 
     <header>
       <h4 class="mb-1">{{ page.title }}</h4>
-      <span>Written on {{ page.date | date: "%b %d, %Y" | escape }}</span>
+      <span>Posted {{ page.date | date: "%d %B %Y" | escape }}</span>
       {%- if page.author -%}
         <span> by {{ page.author | escape }}</span>
       {%- endif -%}

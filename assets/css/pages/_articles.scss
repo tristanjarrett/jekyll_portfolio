@@ -1,0 +1,19 @@
+/**
+ * Articles
+ */
+.page_articles {
+
+  .topics_section {
+    .title {
+      @extend %section_title;
+    }
+  }
+
+  .posts_section {
+    .title {
+      @extend %section_title;
+    }
+    @extend %list_layout;
+  }
+
+}
