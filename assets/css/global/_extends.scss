@@ -16,8 +16,6 @@
         padding: .75rem 0;
         border: 2px solid transparent;
         border-radius: .25rem;
-        transition: .3s ease;
-        font-weight: bold;
         &:hover {
           border: 2px solid $color-primary;
           padding: .75rem 1rem;
