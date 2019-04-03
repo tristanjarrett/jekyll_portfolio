@@ -6,12 +6,12 @@ layout: default
   <div class="container-sm">
 
     <div class="intro_section">
-      <h4>Hi there, I'm Tristan. I enjoy coding, here's a quick intro about my site.</h4>
-      <p>I'm a Software Developer, Car Enthusiast & Coffeeholic. I created this site to document everything I learn from coding to troubleshooting, I also want to improve my writing skills and what a better way than to practice. I enjoy travelling the world and might share some of those experiences too.</p>
+      <h2>Hi there, I'm Tristan. I enjoy coding, here's a quick introduction about my site.</h2>
+      <p>I'm a Software Developer, Car Enthusiast & Entrepreneur. I created this site to document everything I learn from coding to troubleshooting, I also want to improve my writing skills and what a better way than to practice. I enjoy travelling the world and might share some of those experiences too.</p>
     </div>
 
     <div class="posts_section">
-      <h4 class="title">Latest Articles</h4>
+      <h3 class="title">Latest Articles</h3>
       <ul class="list-unstyled">
       {%- for post in site.posts -%}
         <li>
@@ -24,16 +24,16 @@ layout: default
     </div>
 
     <div class="projcts_section">
-      <h4 class="title">Current Projects</h4>
+      <h3 class="title">Current Projects</h3>
       <div class="grid_container">
         {% for project in site.data.projects %}
-        <div class="grid_item">
+        <div class="grid_item mb-1">
           <span class="name">{{ project.name }}</span>
         </div>
-        <div class="grid_item">
+        <div class="grid_item mb-1">
           <span class="description">{{ project.description }}</span>
         </div>
-        <div class="grid_item">
+        <div class="grid_item mb-1">
           <span class="links">
             <a href="{{ project.project-url }}" class="button-md button-primary-outline">Project</a>
             <a href="{{ project.source-url }}" class="button-md button-secondary-outline">Source</a>

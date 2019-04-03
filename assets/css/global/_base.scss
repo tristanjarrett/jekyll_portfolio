@@ -1,13 +1,18 @@
 /**
  * Base
  */
- 
+
+::selection {
+  background: #FFF743;
+}
+::-moz-selection {
+  background: #FFF743;
+}
+
 * {
   transition: .3s ease;
 }
 
 body {
-  font-size: 1.15rem;
-  line-height: 1.5rem !important;
   font-family: sans-serif !important;
 }

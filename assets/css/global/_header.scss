@@ -5,6 +5,7 @@
   padding: 1.5rem 0;
   border-bottom: 1px solid #f7f7f7;
   box-shadow: 1px 2px 10px rgba(0,0,0,.03);
+
   .global_nav {
     justify-content: space-between;
     -webkit-justify-content: space-between;
@@ -13,23 +14,50 @@
     align-items: center;
     -webkit-align-items: center;
   }
-  .logo {
-    img {
-      height: 40px;
+
+  .brand,
+  .menu,
+  .links {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  a.brand {
+    color: #000;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+    .logo {
+      height: 35px;
       width: auto;
-      margin-right: 1rem;
+      margin-right: .5rem;
+    }
+    .text {
+      font-size: 1.20rem;
     }
   }
-  ul {
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    li {
-      list-style-type: none;
-      display: inline-block;
-      margin-left: 0.75rem;
-      a {
+
+  nav {
+    ul.menu {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 1.5rem;
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
+
+  span.links {
+
+  }
+
 }

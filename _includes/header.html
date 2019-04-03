@@ -1,26 +1,28 @@
 <header class="global_header">
+
   <div class="container-sm">
 
     <div class="global_nav">
 
+      <a href="{{ site.url }}" class="brand">
+        <img src="/assets/images/rocket.png" alt="" class="logo">
+        <span class="text">@{{ site.data.options.username }}</span>
+      </a>
 
-        <a href="{{ site.url }}" class="logo">
-          <img src="/assets/images/logo.png" alt="">
-        </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="/blog/">Articles</a></li>
+          <li><a href="/resume/">Résumé</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
 
-        <nav>
-          <ul>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/resume/">Résumé</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </nav>
-
+      <span class="links">
         <a href="https://ko-fi.com/tristanjarrett" target="_blank" class="button-md button-secondary-outline">Donate</a>
+      </span>
 
     </div>
 
-
-
   </div>
+
 </header>

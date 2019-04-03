@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Blog
+title: Articles
 permalink: /blog/
 ---
 
 <div class="page_blog">
 
   <div class="topics_section">
-    <h4 class="title">Topic Categories</h4>
+    <h3 class="title">Topic Categories</h3>
     <ul>
     {% assign categories_list = site.categories %}
     {% if categories_list.first[0] == null %}
@@ -24,7 +24,7 @@ permalink: /blog/
   </div>
 
   <div class="posts_section">
-    <h4 class="title">Articles</h4>
+    <h3 class="title">Articles</h3>
     <ul class="list-unstyled">
     {%- for post in site.posts -%}
       <li>

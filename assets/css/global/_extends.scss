@@ -5,7 +5,7 @@
 %section_title {
   border-bottom: solid 2px $border-color;
   margin-bottom: 1.5rem;
-  padding-bottom: .5rem;
+  padding-bottom: .75rem;
 }
 
 %list_layout {
@@ -32,7 +32,7 @@
   .grid_container {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 1rem;
+    grid-gap: 0 1.5rem;
     .grid_item {
       display: -webkit-flex;
       display: flex;

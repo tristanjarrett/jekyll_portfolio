@@ -5,10 +5,11 @@
   text-decoration: none;
   display: inline-block;
   line-height: normal;
-}
-
-%button-hover {
-  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 // Button Size
@@ -17,37 +18,30 @@
   @extend %button;
   padding: .25rem .5rem;
   font-size: 0.85rem;
-  &:hover {
-    @extend %button-hover;
-  }
 }
 
 .button-md {
   @extend %button;
   padding: .5rem .75rem;
   font-size: 1rem;
-  &:hover {
-    @extend %button-hover;
-  }
 }
 
 .button-lg {
   @extend %button;
   padding: .75rem 1rem;
   font-size: 1.15rem;
-  &:hover {
-    @extend %button-hover;
-  }
 }
 
 // Button Styles
 
 .button-primary {
   background-color: $color-primary;
-  color: $button-text-primary;
+  color: $text-light;
   border: solid 2px $color-primary;
-  &:hover {
-    color: $button-text-primary;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $text-light;
     background-color: darken($color-primary, 10%);
     border: solid 2px darken($color-primary, 10%);
   }
@@ -57,7 +51,9 @@
   background-color: none;
   color: $color-primary;
   border: solid 2px $color-primary;
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: $color-primary;
     background-color: lighten($color-primary, 45%);
     border: solid 2px $color-primary;
@@ -66,10 +62,12 @@
 
 .button-secondary {
   background-color: $color-secondary;
-  color: $button-text-secondary;
+  color: $text-dark;
   border: solid 2px $color-secondary;
-  &:hover {
-    color: $button-text-secondary;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $text-dark;
     background-color: darken($color-secondary, 10%);
     border: solid 2px darken($color-secondary, 10%);
   }
@@ -79,7 +77,9 @@
   background-color: none;
   color: $color-secondary;
   border: solid 2px $color-secondary;
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: $color-secondary;
     background-color: lighten($color-secondary, 45%);
     border: solid 2px $color-secondary;
