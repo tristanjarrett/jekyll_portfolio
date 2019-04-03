@@ -5,6 +5,7 @@
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
+  line-height: normal;
 }
 
 %button-hover {
@@ -15,7 +16,7 @@
 
 .button-sm {
   @extend %button;
-  padding: 0.50rem 1rem;
+  padding: .25rem .5rem;
   font-size: 0.85rem;
   &:hover {
     @extend %button-hover;
@@ -24,7 +25,7 @@
 
 .button-md {
   @extend %button;
-  padding: 0.75rem 1.25rem;
+  padding: .5rem .75rem;
   font-size: 1rem;
   &:hover {
     @extend %button-hover;
@@ -33,7 +34,7 @@
 
 .button-lg {
   @extend %button;
-  padding: 1rem 1.50rem;
+  padding: .75rem 1rem;
   font-size: 1.15rem;
   &:hover {
     @extend %button-hover;

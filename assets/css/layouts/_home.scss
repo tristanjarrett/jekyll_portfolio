@@ -15,17 +15,16 @@
     .title {
       @extend %section_title;
     }
-    ul {
-      li {
-        justify-content: space-between;
-        -webkit-justify-content: space-between;
-        display: flex;
-        display: -webkit-flex;
-        align-items: center;
-        -webkit-align-items: center;
-        margin-bottom: 1rem;
-      }
+    @extend %inline_grid_three;
+    .name {
+      font-weight: bold;
+    }
+    .description {
+      color: #999;
+    }
+    .links {
+
     }
   }
-  
+
 }
