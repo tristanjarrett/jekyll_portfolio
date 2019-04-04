@@ -23,7 +23,7 @@
           border: 2px solid $color-primary;
           padding: .75rem 1rem;
           text-decoration: none;
-          background-color: lighten($color-primary, 45%);
+          background-color: $color-primary-light;
         }
       }
     }

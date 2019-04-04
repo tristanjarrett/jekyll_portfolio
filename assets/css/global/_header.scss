@@ -21,6 +21,8 @@
 .global_header {
   padding: 2rem 0;
   background-color: #ffffff;
+  border-bottom: 1px solid #f7f7f7;
+  box-shadow: 1px 2px 10px rgba(0,0,0,.03);
 
   .global_nav {
     justify-content: space-between;
@@ -66,7 +68,11 @@
         display: inline-block;
         margin: 0 1rem;
         a {
-          color: #000;
+          color: #999;
+          &:hover {
+            color: #555;
+            text-decoration: none;
+          }
         }
       }
     }

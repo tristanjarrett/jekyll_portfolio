@@ -43,8 +43,8 @@
   &:active,
   &:focus {
     color: $text-light;
-    background-color: darken($color-primary, 10%);
-    border: solid $button-border-width darken($color-primary, 10%);
+    background-color: $color-primary-light;
+    border: solid $button-border-width $color-primary-light;
   }
 }
 
@@ -56,7 +56,7 @@
   &:active,
   &:focus {
     color: $color-primary;
-    background-color: lighten($color-primary, 45%);
+    background-color: $color-primary-light;
     border: solid $button-border-width $color-primary;
   }
 }
@@ -69,8 +69,8 @@
   &:active,
   &:focus {
     color: $text-dark;
-    background-color: darken($color-secondary, 10%);
-    border: solid $button-border-width darken($color-secondary, 10%);
+    background-color: $color-secondary-light;
+    border: solid $button-border-width $color-secondary-light;
   }
 }
 
@@ -82,7 +82,7 @@
   &:active,
   &:focus {
     color: $color-secondary;
-    background-color: lighten($color-secondary, 45%);
+    background-color: $color-secondary-light;
     border: solid $button-border-width $color-secondary;
   }
 }

@@ -57,6 +57,16 @@ ol.list-unstyled {
   }
 }
 
+ul.list-inline,
+ol.list-inline {
+  margin: $margin-0;
+  padding: $padding-0;
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+}
+
 // Links
 a {
   color: $color-primary;
@@ -65,7 +75,7 @@ a {
   &:active,
   &:focus {
     text-decoration: underline;
-    color: darken($color-primary, 10%);
+    color: $color-primary;
   }
 }
 
@@ -73,7 +83,6 @@ a {
 blockquote {
   margin: 0;
   border-left: $blockquote-border;
-  background-color: $blockquote-background;
   padding: 1rem;
   font-size: 1.1rem;
   cite {
