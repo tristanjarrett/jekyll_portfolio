@@ -2,6 +2,14 @@
  * Header
  */
 
+.dev_notice {
+  padding: 1rem 0;
+  background-color: $color-primary;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
 .scroll {
   padding: 1rem 0 !important;
   border-bottom: 1px solid #f7f7f7;
