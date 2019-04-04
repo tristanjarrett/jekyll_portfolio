@@ -37,51 +37,51 @@
 .button-primary {
   background-color: $color-primary;
   color: $text-light;
-  border: solid 2px $color-primary;
+  border: solid $button-border-width $color-primary;
   &:hover,
   &:active,
   &:focus {
     color: $text-light;
     background-color: darken($color-primary, 10%);
-    border: solid 2px darken($color-primary, 10%);
+    border: solid $button-border-width darken($color-primary, 10%);
   }
 }
 
 .button-primary-outline {
   background-color: none;
   color: $color-primary;
-  border: solid 2px $color-primary;
+  border: solid $button-border-width $color-primary;
   &:hover,
   &:active,
   &:focus {
     color: $color-primary;
     background-color: lighten($color-primary, 45%);
-    border: solid 2px $color-primary;
+    border: solid $button-border-width $color-primary;
   }
 }
 
 .button-secondary {
   background-color: $color-secondary;
   color: $text-dark;
-  border: solid 2px $color-secondary;
+  border: solid $button-border-width $color-secondary;
   &:hover,
   &:active,
   &:focus {
     color: $text-dark;
     background-color: darken($color-secondary, 10%);
-    border: solid 2px darken($color-secondary, 10%);
+    border: solid $button-border-width darken($color-secondary, 10%);
   }
 }
 
 .button-secondary-outline {
   background-color: none;
   color: $color-secondary;
-  border: solid 2px $color-secondary;
+  border: solid $button-border-width $color-secondary;
   &:hover,
   &:active,
   &:focus {
     color: $color-secondary;
     background-color: lighten($color-secondary, 45%);
-    border: solid 2px $color-secondary;
+    border: solid $button-border-width $color-secondary;
   }
 }
