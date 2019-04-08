@@ -4,7 +4,7 @@ title: Indefinite leave to remain in the UK
 permalink: /indefinite-leave-to-remain-in-the-uk/
 author: Tristan Jarrett
 date: 2018-12-06 18:30:00 +0000
-categories: personal
+categories: Personal
 ---
 
 ### A brief overview of what Indefinite leave to remain is
