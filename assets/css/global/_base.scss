@@ -2,15 +2,14 @@
  * Base
  */
 
-::selection {
-  background: #FFF743;
-  color: $text-dark;
-}
+::selection,
 ::-moz-selection {
-  background: #FFF743;
-  color: $text-dark;
+  background: $color-primary;
+  color: $text-light;
 }
 
 body {
   font-family: sans-serif !important;
+  font-size: 1.15rem;
+  line-height: 1.6;
 }
