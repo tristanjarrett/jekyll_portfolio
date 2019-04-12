@@ -11,17 +11,15 @@
   ul {
     li {
       border-bottom: solid 1px $border-color;
+      padding: 1rem 0;
       &:last-child {
         border-bottom: none;
       }
       a {
-        display: block;
-        padding: 1rem;
         font-size: 1.15rem;
         font-weight: bold;
         &:hover {
-          text-decoration: none;
-          background-color: $color-primary-light;
+          text-decoration: underline;
         }
       }
     }
