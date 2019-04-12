@@ -2,8 +2,9 @@
 
 Personal website running on Jekyll
 
-## Todos
+### Todos
 - [x] Figure out font size
 - [ ] jQuery resize on iOS fix
 - [ ] Mobile dropdown menu
 - [ ] Line height for different elements
+- [ ] Fix footer to bottom when page does not fill the screen
