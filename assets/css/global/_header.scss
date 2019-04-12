@@ -29,8 +29,7 @@
   }
 
   .brand,
-  .menu,
-  .links {
+  .menu {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
@@ -72,10 +71,6 @@
         }
       }
     }
-  }
-
-  span.links {
-
   }
 
 }

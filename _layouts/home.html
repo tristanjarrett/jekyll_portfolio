@@ -25,22 +25,18 @@ layout: default
 
     <div class="projcts_section">
       <h2 class="title">Current Projects</h2>
-      <div class="grid_container">
+      <ul class="list-unstyled">
         {% for project in site.data.projects %}
-        <div class="grid_item mb-1">
-          <span class="name">{{ project.name }}</span>
-        </div>
-        <div class="grid_item mb-1">
-          <span class="description">{{ project.description }}</span>
-        </div>
-        <div class="grid_item mb-1">
-          <span class="links">
+        <li>
+          <div class="name">{{ project.name }}</div>
+          <div class="description">{{ project.description }}</div>
+          <div class="links">
             <a href="{{ project.project-url }}" class="button-md button-primary-outline">Project</a>
             <a href="{{ project.source-url }}" class="button-md button-secondary-outline">Source</a>
-          </span>
-        </div>
+          </div>
+        </li>
         {% endfor %}
-      </div>
+      </ul>
     </div>
 
   </div>
