@@ -3,23 +3,23 @@
  */
 
 %section_title {
-  border-bottom: solid 2px $border-color;
-  margin-bottom: 1.5rem;
-  padding-bottom: .75rem;
+  margin-bottom: 1.25rem;
+  text-decoration: underline;
 }
 
 %list_layout {
   ul {
     li {
+      border-bottom: solid 1px $border-color;
+      &:last-child {
+        border-bottom: none;
+      }
       a {
         display: block;
-        padding: .75rem 1rem;
-        border: 2px solid transparent;
-        border-radius: .25rem;
+        padding: 1rem;
+        font-size: 1.15rem;
         font-weight: bold;
         &:hover {
-          border: 2px solid $color-primary;
-          padding: .75rem 1rem;
           text-decoration: none;
           background-color: $color-primary-light;
         }
