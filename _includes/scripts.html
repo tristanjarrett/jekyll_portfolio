@@ -1,6 +1,6 @@
 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
+<script>
   $(window).scroll(function(){
     if ($(this).scrollTop() > 20) {
       $('#navScroll').addClass('scroll');
@@ -8,4 +8,17 @@
       $('#navScroll').removeClass('scroll');
     }
   });
+</script>
+
+<script>
+  window.onscroll = function() {
+    myFunction()
+  };
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+  }
 </script>

@@ -27,20 +27,3 @@
     }
   }
 }
-
-// Grids
-%inline_grid_three {
-  .grid_container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 0 1.5rem;
-    .grid_item {
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-justify-content: space-between;
-      justify-content: space-between;
-    }
-  }
-}

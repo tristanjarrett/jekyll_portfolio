@@ -2,6 +2,17 @@
  * Header
  */
 
+.progress_container {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  .progress_bar {
+    height: 5px;
+    background: limegreen;
+    width: 0%;
+  }
+}
+
 #navScroll {
   transition: .3s ease;
   &.scroll {
@@ -16,7 +27,6 @@
   right: 0;
   width: 100%;
   z-index: 1000;
-  padding: 2rem 0;
   background-color: #ffffff;
   border-bottom: 1px solid #f3f3f3;
   box-shadow: 2px 3px 15px rgba(0,0,0,.05);
@@ -28,6 +38,7 @@
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
+    padding: 2rem 0;
   }
 
   .brand,

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main class="template_home">
-  <div class="container-md">
+  <div class="container-sm">
 
     <div class="intro_section">
       <h1>Hi, I'm Tristan. I enjoy coding, here's a quick introduction about me and what my site is about.</h1>
@@ -24,11 +24,14 @@ layout: default
     </div>
 
     <div class="projcts_section">
-      <h2 class="title">Current Projects</h2>
+      <h2 class="title">Open Source Projects</h2>
       <ul class="list-unstyled">
         {% for project in site.data.projects %}
         <li>
-          <div class="name">{{ project.name }} <small>(<a href="{{ project.url }}">Source</a>)</small></div>
+          <div class="project_head">
+            <span class="name">{{ project.name }}</span>
+            <span class="link"><small>(<a href="{{ project.url }}">Source</a>)</small></span>
+          </div>
           <div class="description">{{ project.description }}</div>
         </li>
         {% endfor %}
