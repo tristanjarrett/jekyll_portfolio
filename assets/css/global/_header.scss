@@ -50,7 +50,6 @@
   }
 
   a.brand {
-    color: #777777;
     &:hover,
     &:active,
     &:focus {
@@ -62,7 +61,8 @@
       margin-right: .5rem;
     }
     .text {
-      font-family: sans-serif !important;
+      font-size: 20px;
+      color: #999;
     }
   }
 
