@@ -28,12 +28,8 @@ layout: default
       <ul class="list-unstyled">
         {% for project in site.data.projects %}
         <li>
-          <div class="name">{{ project.name }}</div>
+          <div class="name">{{ project.name }} <small>(<a href="{{ project.url }}">Source</a>)</small></div>
           <div class="description">{{ project.description }}</div>
-          <div class="links">
-            <a href="{{ project.project-url }}" class="button-md button-primary-outline">Project</a>
-            <a href="{{ project.source-url }}" class="button-md button-secondary-outline">Source</a>
-          </div>
         </li>
         {% endfor %}
       </ul>
