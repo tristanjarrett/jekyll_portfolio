@@ -1,8 +1,12 @@
 <header class="global_header">
 
-  <div class="progress_container">
-    <div class="progress_bar" id="progressBar"></div>
-  </div>
+  {%- if page.layout == "post" -%}
+    <div class="progress_container">
+      <div class="progress_bar" id="progressBar"></div>
+    </div>
+  {%- else -%}
+    <!-- Don't display -->
+  {%- endif -%}
 
   <div class="container-sm">
 
