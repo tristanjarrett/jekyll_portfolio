@@ -6,8 +6,7 @@
   transition: 0.1s ease;
   &.scroll {
     padding: 1rem 0 !important;
-    border-bottom: 1px solid #f7f7f7;
-    box-shadow: 1px 2px 10px rgba(0,0,0,.03);
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
@@ -16,6 +15,9 @@
 .global_header {
   padding: 2rem 0;
   background-color: #ffffff;
+  border-bottom: 1px solid #f3f3f3;
+  box-shadow: 2px 3px 15px rgba(0,0,0,.05);
+  z-index: 999;
 
   .global_nav {
     justify-content: space-between;
