@@ -1,6 +1,7 @@
 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
 
 <script>
+  // change header padding on scroll
   $(window).scroll(function(){
     if ($(this).scrollTop() > 20) {
       $('#navScroll').addClass('scroll');
@@ -8,9 +9,15 @@
       $('#navScroll').removeClass('scroll');
     }
   });
+
+  // resize body margen to account for fixed header height
+  $(window).resize(function() {
+    $(document.body).css("margin-top", $(".global_header").height());
+  }).resize();
 </script>
 
 <script>
+  // animate progress bar on scroll
   window.onscroll = function() {myFunction()};
 
   function myFunction() {
