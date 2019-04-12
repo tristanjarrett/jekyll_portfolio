@@ -7,11 +7,15 @@ layout: default
   <div class="container-sm">
 
     <header>
-      <h1>{{ page.title }}</h1>
-      <span>Posted {{ page.date | date: "%d %B %Y" | escape }}</span>
-      {%- if page.author -%}
-        <span> by <a href="/biography/">{{ page.author | escape }}</a></span>
-      {%- endif -%}
+      <h1 class="post_title">{{ page.title }}</h1>
+      <span class="post_meta">
+        {%- if page.author -%}
+          Posted {{ page.date | date: "%d %B %Y" | escape }} by {{ page.author | escape }}
+        {%- else -%}
+          Posted {{ page.date | date: "%d %B %Y" | escape }}
+        {%- endif -%}
+      </span>
+
       <hr>
     </header>
 
