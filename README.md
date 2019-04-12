@@ -2,7 +2,7 @@
 
 Personal website running on Jekyll
 
-### Todos
+### Todo list
 - [x] Figure out font size
 - [ ] jQuery resize on iOS fix
 - [ ] Mobile dropdown menu
