@@ -2,6 +2,8 @@
  * Base
  */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 ::selection,
 ::-moz-selection {
   background: $color-primary;
@@ -11,4 +13,7 @@
 body {
   font-family: sans-serif !important;
   margin-top: 100px; // pre-jquery placeholder for fixed header (100px is rough header size)
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif !important; // google font
+  color: #333;
 }

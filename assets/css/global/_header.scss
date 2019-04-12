@@ -62,7 +62,8 @@
       margin-right: .5rem;
     }
     .text {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
+      font-family: sans-serif !important;
     }
   }
 
@@ -74,7 +75,7 @@
       li {
         list-style-type: none;
         display: inline-block;
-        margin: 0 1rem;
+        margin-left: 1rem;
         a {
           color: #999;
           &:hover {

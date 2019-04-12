@@ -4,7 +4,12 @@
 .template_home {
   padding: 1rem 0;
 
+  .intro_section {
+    margin-top: 3rem;
+  }
+
   .posts_section {
+    margin-top: 3rem;
     .title {
       @extend %section_title;
     }
@@ -12,6 +17,7 @@
   }
 
   .projcts_section {
+    margin-top: 3rem;
     .title {
       @extend %section_title;
     }
@@ -19,9 +25,12 @@
     ul {
       li {
         border-bottom: solid 1px $border-color;
-        padding: 1.5rem 0;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
         &:last-child {
           border-bottom: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
         }
 
         .project_head {
