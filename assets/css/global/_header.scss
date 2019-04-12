@@ -3,21 +3,23 @@
  */
 
 #navScroll {
-  transition: 0.1s ease;
+  transition: .3s ease;
   &.scroll {
     padding: 1rem 0 !important;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
 }
 
 .global_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 2rem 0;
   background-color: #ffffff;
   border-bottom: 1px solid #f3f3f3;
   box-shadow: 2px 3px 15px rgba(0,0,0,.05);
-  z-index: 999;
 
   .global_nav {
     justify-content: space-between;
