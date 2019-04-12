@@ -10,7 +10,7 @@ layout: default
       <h1>{{ page.title }}</h1>
       <span>Posted {{ page.date | date: "%d %B %Y" | escape }}</span>
       {%- if page.author -%}
-        <span> by {{ page.author | escape }}</span>
+        <span> by <a href="/biography/">{{ page.author | escape }}</a></span>
       {%- endif -%}
       <hr>
     </header>
