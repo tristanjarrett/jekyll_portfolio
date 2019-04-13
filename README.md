@@ -8,3 +8,4 @@ Personal website running on Jekyll
 - [ ] Mobile dropdown menu
 - [ ] Line height for different elements
 - [ ] Fix footer to bottom when page does not fill the screen
+- [ ] Add portfolio page, open source, paid work & charitable
