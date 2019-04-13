@@ -61,7 +61,6 @@
       margin-right: .5rem;
     }
     .text {
-      font-size: 20px;
       color: #999;
     }
   }
@@ -74,17 +73,9 @@
       li {
         list-style-type: none;
         display: inline-block;
-        &:before {
-          content: "/";
-        }
-        &:first-child {
-          &:before {
-            content: "";
-          }
-        }
         a {
           color: #999;
-          margin: 0 .5rem;
+          margin-left: 1rem;
           &:hover {
             color: #555;
             text-decoration: none;
