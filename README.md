@@ -2,7 +2,7 @@
 
 Personal website running on Jekyll
 
-### Install
+## Install
 ```
 git clone https://github.com/tristanjarrett/tristanjarrett.com
 cd tristanjarrett.com
@@ -11,7 +11,7 @@ bundle exec jekyll serve
 ```
 Navigate to [localhost:4000](http://localhost:4000)
 
-### Todo list
+## Todo list
 - [x] Figure out font size
 - [ ] jQuery resize on iOS fix
 - [ ] Mobile dropdown menu
