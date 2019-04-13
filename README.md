@@ -2,19 +2,28 @@
 
 Personal website running on Jekyll
 
-## Install
+## Installation
+
+Run on a local server:
+
 ```
 git clone https://github.com/tristanjarrett/tristanjarrett.com
 cd tristanjarrett.com
 bundle install
 bundle exec jekyll serve
 ```
-Navigate to [localhost:4000](http://localhost:4000)
+
+Navigate to `[localhost:4000](http://localhost:4000)`
 
 ## Todo list
+
 - [x] Figure out font size
 - [ ] jQuery resize on iOS fix
 - [ ] Mobile dropdown menu
 - [ ] Line height for different elements
 - [ ] Fix footer to bottom when page does not fill the screen
 - [ ] Add portfolio page, open source, paid work & charitable
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
