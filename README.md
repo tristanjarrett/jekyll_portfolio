@@ -9,7 +9,7 @@ cd tristanjarrett.com
 bundle install
 bundle exec jekyll serve
 ```
-Browse [localhost:4000](http://localhost:4000)
+Navigate to [localhost:4000](http://localhost:4000)
 
 ### Todo list
 - [x] Figure out font size
