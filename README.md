@@ -2,6 +2,13 @@
 
 Personal website running on Jekyll
 
+### Install
+``
+$bundle install
+
+$bundle exec jekyll serve
+``
+
 ### Todo list
 - [x] Figure out font size
 - [ ] jQuery resize on iOS fix
