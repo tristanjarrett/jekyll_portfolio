@@ -13,7 +13,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Navigate to `[localhost:4000](http://localhost:4000)`
+Navigate to `localhost:4000`
 
 ## Todo list
 
