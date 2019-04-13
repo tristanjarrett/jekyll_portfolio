@@ -3,11 +3,12 @@
 Personal website running on Jekyll
 
 ### Install
-``
-$bundle install
-
-$bundle exec jekyll serve
-``
+```
+git clone https://github.com/tristanjarrett/tristanjarrett.com
+cd tristanjarrett.com
+bundle install
+bundle exec jekyll serve
+```
 
 ### Todo list
 - [x] Figure out font size
