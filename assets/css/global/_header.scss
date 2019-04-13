@@ -74,9 +74,17 @@
       li {
         list-style-type: none;
         display: inline-block;
-        margin-left: 1rem;
+        &:before {
+          content: "/";
+        }
+        &:first-child {
+          &:before {
+            content: "";
+          }
+        }
         a {
           color: #999;
+          margin: 0 .5rem;
           &:hover {
             color: #555;
             text-decoration: none;

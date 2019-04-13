@@ -12,8 +12,6 @@
   ul {
     li {
       border-bottom: solid 1px $border-color;
-      padding-bottom: 1rem;
-      margin-bottom: 1rem;
       &:last-child {
         border-bottom: none;
         padding-bottom: 0;
@@ -22,8 +20,13 @@
       a {
         font-size: 1.15rem;
         font-weight: bold;
+        display: block;
+        padding: 1rem 0;
+        transition: .3s ease;
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
+          background-color: $color-primary-light;
+          padding: 1rem;
         }
       }
     }

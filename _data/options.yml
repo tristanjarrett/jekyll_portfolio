@@ -1,6 +1,10 @@
 # Theme settings
 username: tristanjarrett
 
+# Repository settings
+repo-url: https://www.github.com/tristanjarrett/tristanjarrett.com # Without a trailing '/'
+repo-branch: master
+
 # Social settings
 github-user: tristanjarrett
 twitter-user: tristjarrett
