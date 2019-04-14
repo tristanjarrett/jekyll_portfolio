@@ -2,28 +2,28 @@
 
 <script>
   // change header padding on scroll
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 50) {
-      $('#navScroll').addClass('scroll');
-    } else {
-      $('#navScroll').removeClass('scroll');
-    }
-  });
+  //$(window).scroll(function(){
+    //if ($(this).scrollTop() > 50) {
+      //$('#navScroll').addClass('scroll');
+    //} else {
+      //$('#navScroll').removeClass('scroll');
+    //}
+  //});
 
   // resize body margin to account for fixed header height
-  // $(window).resize(function() {
-  //   $(document.body).css("margin-top", $(".global_header").height());
-  // }).resize();
+  //$(window).resize(function() {
+    //$(document.body).css("margin-top", $(".global_header").height());
+  //}).resize();
 </script>
 
 <script>
   // animate progress bar on scroll
-  window.onscroll = function() {myFunction()};
+  // window.onscroll = function() {myFunction()};
 
-  function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-  }
+  //function myFunction() {
+  //var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    //var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    //var scrolled = (winScroll / height) * 100;
+    //document.getElementById("progressBar").style.width = scrolled + "%";
+  //}
 </script>
