@@ -19,9 +19,9 @@ $desktop: $medium;
 
 /* Colors */
 
-$background: white; 
+$background: white;
 $primary-color: #0366EE;
-$secondary-color: #29de7d; 
+$secondary-color: #29de7d;
 $accent-color: #cdcdcd;
 $alternate-background: #fafafa;
 $alternate-color: #404040;
@@ -65,7 +65,7 @@ $h5: 1.25rem;
 
 /* Padding */
 
-$padding: 1rem;
+$padding: 1.25rem;
 $margins: 1.5rem;
 $content-padding: 60px 0;
 $content-padding-mobile: 30px 0;
@@ -96,7 +96,7 @@ $button-text-transform: none;
 $accent-button-background: $secondary-color;
 $accent-button-color: #ffffff;
 $accent-button-color-hover: #ffffff;
- 
+
 // Muted Buttons
 $muted-border: 1px solid $accent-color;
 $muted-border-hover: 1px solid darken($accent-color, 30%);
@@ -105,8 +105,8 @@ $muted-background-hover: transparent;
 $muted-color: darken($accent-color, 50%);
 $muted-color-hover: darken($accent-color, 50%);
 
-// Round Buttons   
-$round-buttons: 40px; 
+// Round Buttons
+$round-buttons: 40px;
 
 /* Forms */
 
@@ -116,8 +116,8 @@ $input-background: transparent;
 $placeholder: darken($accent-color, 20%);
 $form-border: 1px solid $border-color;
 $form-border-hover: 1px solid darken($border-color, 10%);
-$form-border-focus: 1px solid $link-color; 
- 
+$form-border-focus: 1px solid $link-color;
+
 /* Tables */
 
 $stripes: #f8f8f8;
@@ -129,4 +129,4 @@ $code-color: $font-color;
 $code-size: 14px;
 $code-family: Menlo, monospace;
 $code-background: transparent;
-$code-borders: $borders;   
+$code-borders: $borders;
