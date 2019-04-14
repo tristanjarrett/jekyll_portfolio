@@ -1,84 +1,51 @@
-// Table general
+/* Tables
+  =============== */
+
+// Table expands to full width of containing element
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  max-width: 100%;
-  background-color: $table-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+// Extra border underneath header
+thead th {
+    border-bottom: 2px solid $border-color;
+}
+
+// Extra border above footer
+tfoot th {
+    border-top: 2px solid $border-color;
+}
+
+td {
+    border-bottom: 1px solid $border-color;
 }
 
 th,
 td {
-  text-align: left;
-  padding: $table-padding;
+    text-align: left;
+    padding: .5rem;
 }
 
-// Table heading
-thead th {
-  border-bottom: solid 2px $border-color;
+caption {
+    padding: $padding 0;
+    caption-side: bottom;
+    color: $caption;
 }
 
-// Table foot
-tfoot th {
-  border-top: solid 2px $border-color;
+.striped-table tbody tr:nth-child(odd) {
+    background-color: $stripes;
 }
 
-// Table data
-td {
-  border-bottom: solid 1px $border-color;
+// Container for responsive tables
+.contain-table {
+    overflow-x: auto;
 }
 
-// Every odd row in the table body is a different color
-.table-striped {
-  tbody tr:nth-child(odd) {
-    background-color: darken($table-color, 5%);
-  }
-}
-
-// Remove horizontal padding to make the text go edge to edge
-.table-flush {
-  th,
-  td {
-    padding: $table-padding 0;
-  }
-}
-
-// Add a border around entire table & bewteen each heading & data cell
-.table-bordered {
-  border: solid 1px $border-color;
-  th,
-  td {
-    border-right: solid 1px $border-color;
-    padding: $table-padding !important;
-    &:last-child {
-      border-right: none;
+@include small-breakpoint {
+    .contain-table {
+        width: 100%;
     }
-  }
-}
-
-// Add a border bewteen each heading & data cell
-.table-bordered-x {
-  th,
-  td {
-    border-right: solid 1px $border-color;
-    padding: $table-padding !important;
-    &:last-child {
-      border-right: none;
-    }
-  }
-}
-
-// Add a border to the top and bottom of table
-.table-bordered-y {
-  thead th {
-    border-top: solid 1px $border-color;
-  }
-  tfoot th {
-    border-bottom: solid 1px $border-color;
-  }
-}
-
-// Make table scroll horizontally
-.table-scroll {
-  overflow-x: auto;
 }

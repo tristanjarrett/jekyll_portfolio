@@ -4,11 +4,11 @@ layout: default
 
 <main class="template_post">
 
-  <div class="container-sm">
+  <article class="container-sm">
 
     <header>
       <h1 class="post_title">{{ page.title }}</h1>
-      <div class="post_meta mb-1">
+      <div class="post_meta">
         <span>Posted {{ page.date | date: "%d %B %Y" | escape }} / <a href="{{ site.data.options.repo-url }}/blob/{{ site.data.options.repo-branch }}/{{ page.path }}">Edit</a></span>
       </div>
 
@@ -23,6 +23,6 @@ layout: default
 
     {{ content }}
 
-  </div>
+  </article>
 
 </main>

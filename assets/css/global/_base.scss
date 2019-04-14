@@ -4,8 +4,7 @@
 
 ::selection,
 ::-moz-selection {
-  background: $color-primary;
-  color: $text-light;
+  background: $primary-color;
 }
 
 body {
@@ -18,4 +17,24 @@ body {
 
 p {
   line-height: 1.5;
+}
+
+// Lists
+ul.list-unstyled,
+ol.list-unstyled {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+ul.list-inline,
+ol.list-inline {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
 }
