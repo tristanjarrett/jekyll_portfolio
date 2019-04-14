@@ -5,6 +5,7 @@
 ::selection,
 ::-moz-selection {
   background: $primary-color;
+  color: #ffffff;
 }
 
 body {
@@ -12,11 +13,6 @@ body {
   margin-top: 100px; // pre-jquery placeholder for fixed header (100px is rough header size)
   font-size: 18px;
   color: #333;
-  -webkit-overflow-scrolling: touch;
-}
-
-p {
-  line-height: 1.5;
 }
 
 // Lists
