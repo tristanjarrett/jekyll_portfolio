@@ -6,33 +6,4 @@ permalink: /articles/
 
 <div class="page_articles container-sm">
 
-  <div class="categories_section">
-    <h2 class="title">Categories</h2>
-    <ul class="list-inline">
-      {% if site.categories.first[0] == null %}
-        {% for category in site.categories %}
-          <li><a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}" class="button-sm button-secondary-outline">{{ category | camelcase }} ({{ site.tags[category].size }})</a></li>
-        {% endfor %}
-      {% else %}
-        {% for category in site.categories %}
-          <li><a href="#{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}" class="button-sm button-secondary-outline">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
-        {% endfor %}
-      {% endif %}
-    </ul>
-
-  </div>
-
-  <div class="posts_section">
-    <h2 class="title">Articles</h2>
-    <ul class="list-unstyled">
-    {%- for post in site.posts -%}
-      <li>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </li>
-    {%- endfor -%}
-    </ul>
-  </div>
-
 </div>

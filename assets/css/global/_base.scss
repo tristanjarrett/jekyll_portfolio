@@ -2,14 +2,8 @@
  * Base
  */
 
-::selection,
-::-moz-selection {
-  background: $primary-color;
-  color: #ffffff;
-}
-
 body {
-  margin-top: 99px; // jquery failover for fixed header (value is rough header size)
+  margin-top: 100px; // jQuery failover for fixed header (value is a rough estimate of header height)
   font-size: 18px;
   color: #333;
 }

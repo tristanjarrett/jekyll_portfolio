@@ -4,7 +4,12 @@
 .page_index {
 
   .intro_section {
-    margin-bottom: 3rem;
+    padding: 2.5rem 0;
+    background-color: #19e68c;
+    color: #ffffff;
+    .intro_title {
+      color: #ffffff;
+    }
   }
 
   .posts_section {

@@ -3,17 +3,4 @@
  */
 .page_articles {
 
-  .categories_section {
-    .title {
-      @extend %section_title;
-    }
-  }
-
-  .posts_section {
-    .title {
-      @extend %section_title;
-    }
-    @extend %list_layout;
-  }
-
 }
