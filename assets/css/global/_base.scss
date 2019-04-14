@@ -9,8 +9,7 @@
 }
 
 body {
-  font-family: sans-serif !important;
-  //margin-top: 100px; // pre-jquery placeholder for fixed header (100px is rough header size)
+  margin-top: 99px; // jquery failover for fixed header (value is rough header size)
   font-size: 18px;
   color: #333;
 }
