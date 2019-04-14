@@ -5,13 +5,12 @@
 
   .intro_section {
     padding: 2.5rem 0;
-    background-color: #19e68c;
+    background-color: $primary-color;
+    color: #fff !important;
     .intro_title {
-      color: #fff;
       line-height: normal !important;
     }
     .intro_text {
-      color: #fff;
       line-height: normal !important;
     }
   }
@@ -19,15 +18,14 @@
   .posts_section {
     margin-bottom: 2.5rem;
     .title {
-      @extend %section_title;
+      text-decoration: underline;
     }
-    @extend %list_layout;
   }
 
   .projcts_section {
     margin-bottom: 2.5rem;
     .title {
-      @extend %section_title;
+      text-decoration: underline;
     }
 
     ul {

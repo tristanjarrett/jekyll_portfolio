@@ -1,24 +1,3 @@
 /**
  * Extends
  */
-
-%section_title {
-  margin-bottom: 1.25rem;
-  padding-bottom: .75rem;
-  border-bottom: solid 2px $border-color;
-}
-
-%list_layout {
-  ul {
-    li {
-      border-bottom: solid 1px $border-color;
-      &:last-child {
-        border-bottom: none;
-      }
-      a {
-        font-weight: bold;
-        display: block;
-      }
-    }
-  }
-}

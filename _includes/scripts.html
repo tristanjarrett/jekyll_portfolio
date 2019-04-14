@@ -2,18 +2,18 @@
 
 <script>
   // change header padding on scroll
-  //$(window).scroll(function(){
-    //if ($(this).scrollTop() > 50) {
-      //$('#navScroll').addClass('scroll');
-    //} else {
-      //$('#navScroll').removeClass('scroll');
-    //}
-  //});
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+      $('#navScroll').addClass('scroll');
+    } else {
+      $('#navScroll').removeClass('scroll');
+    }
+  });
 
   // resize body margin to account for fixed header height
-  //$(window).resize(function() {
-    //$(document.body).css("margin-top", $(".global_header").height());
-  //}).resize();
+  $(window).resize(function() {
+    $(document.body).css("margin-top", $(".global_header").height());
+  }).resize();
 </script>
 
 <script>

@@ -20,7 +20,7 @@ $desktop: $medium;
 /* Colors */
 
 $background: white;
-$primary-color: #0366EE;
+$primary-color: #33beff;
 $secondary-color: #29de7d;
 $accent-color: #cdcdcd;
 $alternate-background: #fafafa;
@@ -44,10 +44,10 @@ $font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Aria
 $line-height: 1.6;
 
 // Headings
-$heading-font-color: #404040;
+$heading-font-color: inherit;
 $heading-font-weight: 600;
 $heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$heading-line-height: 1.2;
+$heading-line-height: normal;
 
 // Mobile heading font size
 $h1-mobile: 1.75rem;
