@@ -8,15 +8,18 @@ layout: default
 
     <header>
       <h1 class="post_title">{{ page.title }}</h1>
+
       <div class="post_meta">
         <span>Posted {{ page.date | date: "%d %B %Y" | escape }} / <a href="{{ site.data.options.repo-url }}/blob/{{ site.data.options.repo-branch }}/{{ page.path }}">Edit</a></span>
       </div>
 
-      <ul class="post_categories list-inline">
+
+      <div class="post_categories list-inline">
+        <span>Tags: </span>
         {% for category in page.categories %}
-          <li><a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}" class="button-sm button-secondary-outline">{{ category | camelcase }}</a></li>
+          <a href="#{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}</a>
         {% endfor %}
-      </ul>
+      </div>
 
       <hr>
     </header>
