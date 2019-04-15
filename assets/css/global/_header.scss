@@ -26,7 +26,8 @@
     background: transparent;
     .progress_bar {
       height: 3px;
-      background: $primary-color;
+      background-color: $bg-color;
+      background: $bg-gradient;
       width: 0%;
     }
   }

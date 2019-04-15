@@ -4,7 +4,7 @@ title: My experience obtaining indefinite leave to remain in the UK
 permalink: /indefinite-leave-to-remain-uk/
 author: Tristan Jarrett
 date: 2018-12-06 18:30:00 +0000
-categories: Personal
+tags: Personal
 ---
 
 ### A brief overview of what Indefinite leave to remain is
