@@ -11,6 +11,17 @@
     margin-bottom: .5rem;
   }
   .post_categories {
-    
+    li {
+      list-style-type: none;
+      display: inline-block;
+      &:after {
+        content: ",";
+      }
+      &:last-child {
+        &:after {
+          content: "";
+        }
+      }
+    }
   }
 }

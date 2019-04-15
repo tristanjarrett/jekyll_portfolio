@@ -2,60 +2,65 @@
  * Home
  */
 .page_index {
+  line-height: normal !important;
 
-  .intro_section {
+  .intro {
     padding: 2.5rem 0;
     background-color: $primary-color;
-    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    color: #fff !important;
-    .intro_title {
-      line-height: normal !important;
-    }
-    .intro_text {
-      line-height: normal !important;
-    }
+    color: #fff;
   }
 
-  .posts_section {
-    margin-bottom: 2.5rem;
-    .title {
-      text-decoration: underline;
-    }
-  }
+  .content {
+    padding: 2.5rem 0;
 
-  .projcts_section {
-    margin-bottom: 2.5rem;
-    .title {
-      text-decoration: underline;
-    }
+    .posts_section {
+      margin-bottom: 2.5rem;
 
-    ul {
-      li {
+      .title {
+        color: #555;
         border-bottom: solid 1px $border-color;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        &:last-child {
-          border-bottom: none;
-          padding-bottom: 0;
-          margin-bottom: 0;
-        }
-
-        .project_head {
-          margin-bottom: .75rem;
-          .name {
-            font-weight: bold;
-          }
-          .link {
-            font-weight: bold;
-          }
-        }
-
-        .description {
-          color: #999;
-        }
+        padding-bottom: .75rem;
       }
     }
 
+    .projcts_section {
+
+      .title {
+        color: #555;
+        border-bottom: solid 1px $border-color;
+        padding-bottom: .75rem;
+      }
+
+      ul {
+        li {
+          border-bottom: solid 1px $border-color;
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
+
+          .project_head {
+            margin-bottom: .75rem;
+
+            .name {
+              font-weight: bold;
+            }
+
+            .link {
+              font-weight: bold;
+            }
+          }
+
+          .description {
+            color: #999;
+          }
+        }
+      }
+
+    }
   }
 
 }

@@ -4,42 +4,44 @@ layout: home
 
 <div class="page_index">
 
-  <div class="intro_section">
+  <div class="intro">
     <div class="container-sm">
       <h1 class="intro_title">Hi, I'm Tristan. I enjoy coding, here's a quick introduction about me and what my site is about.</h1>
-      <p class="intro_text">I'm a Software Developer, Car Enthusiast & Coffeehead. I created this site to document everything I learn from coding to troubleshooting, I also want to improve my writing skills and what a better way than to practice. I enjoy travelling the world and so I might share some of those experiences too.</p>
+      <p class="intro_text">I'm a Web Developer, Car Enthusiast & Coffeehead. I created this site to document everything I learn from coding to troubleshooting, I also want to improve my writing skills and what a better way than to practice. I enjoy travelling the world and so I might share some of those experiences too.</p>
     </div>
   </div>
 
-  <div class="posts_section">
-    <div class="container-sm">
-      <h3 class="title">Latest Articles</h3>
-      <ul class="list-unstyled">
-      {%- for post in site.posts -%}
-        <li>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </li>
-      {%- endfor -%}
-      </ul>
+  <div class="content">
+    <div class="posts_section">
+      <div class="container-sm">
+        <h3 class="title">Latest Articles</h3>
+        <ul class="list-unstyled">
+        {%- for post in site.posts -%}
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              <h4>{{ post.title | escape }}</h4>
+            </a>
+          </li>
+        {%- endfor -%}
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="projcts_section">
-    <div class="container-sm">
-      <h3 class="title">Open Source Projects</h3>
-      <ul class="list-unstyled">
-        {% for project in site.data.projects %}
-        <li>
-          <div class="project_head">
-            <span class="name">{{ project.name }}</span>
-            <span class="link"><small>(<a href="{{ project.url }}">Source</a>)</small></span>
-          </div>
-          <div class="description">{{ project.description }}</div>
-        </li>
-        {% endfor %}
-      </ul>
+    <div class="projcts_section">
+      <div class="container-sm">
+        <h3 class="title">Open Source Projects</h3>
+        <ul class="list-unstyled">
+          {% for project in site.data.projects %}
+          <li>
+            <div class="project_head">
+              <span class="name">{{ project.name }}</span>
+              <span class="link"><small>(<a href="{{ project.url }}">Source</a>)</small></span>
+            </div>
+            <div class="description">{{ project.description }}</div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 
