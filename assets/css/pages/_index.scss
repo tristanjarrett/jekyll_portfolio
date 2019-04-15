@@ -22,6 +22,14 @@
         border-bottom: solid 1px $border-color;
         padding-bottom: .75rem;
       }
+      ul {
+        li {
+          margin-bottom: 1rem;
+          .item {
+            margin: 0;
+          }
+        }
+      }
     }
 
     .projcts_section {

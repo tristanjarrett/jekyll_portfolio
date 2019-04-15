@@ -19,7 +19,7 @@ layout: home
         {%- for post in site.posts -%}
           <li>
             <a href="{{ post.url | relative_url }}">
-              <h4>{{ post.title | escape }}</h4>
+              <h4 class="item">{{ post.title | escape }}</h4>
             </a>
           </li>
         {%- endfor -%}
