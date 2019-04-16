@@ -2,18 +2,10 @@
  * Header
  */
 
-#navScroll {
-  transition: .3s ease;
-  &.scroll {
-    padding: 1rem 0 !important;
-  }
-}
-
 .global_header {
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   z-index: 1000;
   background-color: #ffffff;
@@ -39,7 +31,7 @@
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
   }
 
   .brand,

@@ -10,14 +10,16 @@ layout: default
       <h1 class="post_title">{{ page.title }}</h1>
 
       <div class="post_meta">
-        <span>Posted {{ page.date | date: "%d %B %Y" | escape }} / <a href="{{ site.data.options.repo-url }}/blob/{{ site.data.options.repo-branch }}/{{ page.path }}">Edit</a></span>
+        <time>Posted {{ page.date | date: "%d %B %Y" | escape }}</time>
+        <span> / <a href="{{ site.data.options.repo-url }}/blob/{{ site.data.options.repo-branch }}/{{ page.path }}">Edit</a></span>
       </div>
 
 
       <div class="post_categories list-inline">
         <span>Tags: </span>
         {% for tag in page.tags %}
-          <li><a href="/tags/{{ tag | downcase | downcase | url_escape | strip | replace: ' ', '-' }}/">{{ tag | camelcase }}</a></li>
+          <!-- <li><a href="/tags/{{ tag | downcase | downcase | url_escape | strip | replace: ' ', '-' }}/">{{ tag | camelcase }}</a></li> -->
+          <li>{{ tag | camelcase }}</li>
         {% endfor %}
       </div>
 
