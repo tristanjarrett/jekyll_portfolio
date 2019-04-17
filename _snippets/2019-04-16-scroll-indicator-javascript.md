@@ -1,13 +1,13 @@
 ---
 layout: snippet
-title: Add a progress bar on scroll
-slug: progress-bar-on-scroll
+title: Add a scroll indicator with JavaScript
+slug: scroll-indicator-javascript
 author: Tristan Jarrett
 date: 2019-04-16 18:30:00 +0000
 tags: [JavaScript, CSS, HTML]
 ---
 
-### HTML
+#### HTML
 
 ``` HTML
 <div class="header">
@@ -17,7 +17,7 @@ tags: [JavaScript, CSS, HTML]
 </div>
 ```
 
-### CSS
+#### CSS
 
 ``` CSS
 .header {
@@ -32,14 +32,14 @@ tags: [JavaScript, CSS, HTML]
   background: transparent;
 }
 .progress_bar {
-  height: 3px;
-  background-color: $primary-color;
+  height: 5px;
+  background-color: #000fff;
   width: 0%;
   max-width: 100%;
 }
 ```
 
-### JavaScript
+#### JavaScript
 
 ``` JavaScript
 window.onscroll = function() {
