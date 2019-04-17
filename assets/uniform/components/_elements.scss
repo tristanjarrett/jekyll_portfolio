@@ -1,0 +1,91 @@
+// Body
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $text-dark;
+  box-sizing: border-box;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: $margin-1;
+  margin-bottom: $margin-1;
+}
+h1 {
+  font-size: $h1-size;
+}
+h2 {
+  font-size: $h2-size;
+}
+h3 {
+  font-size: $h3-size;
+}
+h4 {
+  font-size: $h4-size;
+}
+h5 {
+  font-size: $h5-size;
+}
+h6 {
+  font-size: $h6-size;
+}
+
+// Paragraphs
+p {
+  margin-top: $margin-0;
+  margin-bottom: $margin-1;
+  &:last-child {
+    margin-bottom: $margin-0;
+  }
+}
+
+// Horizontal line
+hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: solid 1px $border-color;
+}
+
+// Lists
+ul.list-unstyled,
+ol.list-unstyled {
+  margin: $margin-0;
+  padding: $padding-0;
+  li {
+    list-style-type: none;
+  }
+}
+
+// Links
+a {
+  color: $color-primary;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    color: $color-primary-hover;
+  }
+}
+
+// Blockquotes
+blockquote {
+  margin: 0;
+  border-left: $blockquote-border;
+  background-color: $blockquote-background;
+  padding: 1rem;
+  font-size: 1.1rem;
+  cite {
+    display: block;
+    margin-top: $margin-1;
+    font-size: 1rem;
+    text-align: right;
+    color: lighten($text-dark, 20%);
+  }
+}

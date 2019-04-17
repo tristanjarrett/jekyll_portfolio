@@ -1,132 +1,76 @@
-/* Variables
- * ===============
- *
- * All variables and most of the configuration is defined on this page. */
+// Colors
 
+$color-primary: #007bff;
+$color-primary-hover: darken($color-primary, 10%);
+$color-secondary: #e8e9ec;
+$color-secondary-hover: darken($color-secondary, 10%);
 
-/* Containers */
+$background-primary: #ffffff;
+$background-secondary: #fafafa;
 
-$x-small: 600px;
-$small: 800px;
-$medium: 1000px;
-$large: 1200px;
+$text-dark: #404040;
+$text-light: #ffffff;
 
-/* Breakpoints */
+$button-text-primary: $text-light;
+$button-text-secondary: $text-dark;
 
-$mobile: $x-small;
-$tablet: $small;
-$desktop: $medium;
-
-/* Colors */
-
-$background: white;
-$primary-color: #0086e6;
-$secondary-color: #29de7d;
-$accent-color: #cdcdcd;
-$alternate-background: #fafafa;
-$alternate-color: #404040;
-$link-color: $primary-color;
-$link-hover-color: darken($link-color, 15%);
-$highlight: #ffeea8;
-$error: #D33C40;
-$bq-border: 16px solid #f0f0f0;
-
-/* Typography */
-
-// Body font
-$font-size: 1rem;
-$body-font-size: 1rem;
-$font-style: normal;
-$font-variant: normal;
-$font-weight: normal;
-$font-color: #404040;
-$font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$line-height: 1.6;
-
-// Headings
-$heading-font-color: inherit;
-$heading-font-weight: 600;
-$heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$heading-line-height: normal;
-
-// Mobile heading font size
-$h1-mobile: 1.75rem;
-$h2-mobile: 1.5rem;
-$h3-mobile: 1.25rem;
-$h4-mobile: 1.1rem;
-$h5-mobile: 1rem;
-
-// Heading font size
-$h1: 2.25rem;
-$h2: 2rem;
-$h3: 1.75rem;
-$h4: 1.5rem;
-$h5: 1.25rem;
-
-/* Padding */
-
-$padding: 1.25rem;
-$margins: 1.25rem;
-$content-padding: 60px 0;
-$content-padding-mobile: 30px 0;
-
-/* Borders */
-
-$border-width: 1px;
-$border-style: solid;
 $border-color: #e1e1e1;
-$border-radius: 4px;
-$borders: $border-width $border-style $border-color;
 
-/* Buttons */
+$blockquote-theme: $color-primary;
 
-$button-background: $primary-color;
-$button-background-hover: darken($button-background, 10%);
-$button-color: #ffffff;
-$button-font-weight: 600;
-$button-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-$button-font-size: 1rem;
-$button-border-width: 1px;
-$button-border-style: solid;
-$button-border-color: $button-background;
-$button-border-radius: $border-radius;
-$button-text-transform: none;
+$table-color: #ffffff;
 
-// Accent buttons
-$accent-button-background: $secondary-color;
-$accent-button-color: #ffffff;
-$accent-button-color-hover: #ffffff;
+// General Typography
 
-// Muted Buttons
-$muted-border: 1px solid $accent-color;
-$muted-border-hover: 1px solid darken($accent-color, 30%);
-$muted-background: transparent;
-$muted-background-hover: transparent;
-$muted-color: darken($accent-color, 50%);
-$muted-color-hover: darken($accent-color, 50%);
+$font-family: sans-serif;
+$font-size: 1rem;
+$font-weight: normal;
 
-// Round Buttons
-$round-buttons: 40px;
+$h1-size: 2.50rem;
+$h2-size: 2.25rem;
+$h3-size: 2rem;
+$h4-size: 1.75rem;
+$h5-size: 1.50rem;
+$h6-size: 1.25rem;
 
-/* Forms */
+// Gutters
 
-$forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
-$buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
-$input-background: transparent;
-$placeholder: darken($accent-color, 20%);
-$form-border: 1px solid $border-color;
-$form-border-hover: 1px solid darken($border-color, 10%);
-$form-border-focus: 1px solid $link-color;
+$gutter-width: 1rem;
 
-/* Tables */
+// General Margins
 
-$stripes: #f8f8f8;
-$caption: #ababab;
+$margin-0: 0;
+$margin-1: 1rem;
+$margin-2: 2rem;
+$margin-3: 3rem;
 
-/* Code */
+// General Padding
 
-$code-color: $font-color;
-$code-size: 14px;
-$code-family: Menlo, monospace;
-$code-background: transparent;
-$code-borders: $borders;
+$padding-0: 0;
+$padding-1: 1rem;
+$padding-2: 2rem;
+$padding-3: 3rem;
+
+// Screen Width
+
+$width-lg: 1200px;
+$width-md: 1000px;
+$width-sm: 800px;
+$width-xs: 600px;
+
+// Buttons
+
+$button-radius: .25rem;
+
+// Borders
+
+$border: solid 1px $border-color;
+
+// Blockquotes
+
+$blockquote-border: solid 7px $blockquote-theme;
+$blockquote-background: lighten($blockquote-theme, 45%);
+
+// Tables
+
+$table-padding: .75rem;
