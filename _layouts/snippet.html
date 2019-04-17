@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<main class="template_post">
+<main class="template_snippet">
 
   <article class="container-sm">
 
     <header>
-      <h1 class="post_title">{{ page.title }}</h1>
+      <h1 class="snippet_title">{{ page.title }}</h1>
 
-      <div class="post_meta">
+      <div class="snippet_meta">
         <time>Posted {{ page.date | date: "%d %B %Y" | escape }}</time>
         <span> / <a href="{{ site.data.options.repo-url }}/blob/{{ site.data.options.repo-branch }}/{{ page.path }}">Edit</a></span>
       </div>
 
-      <div class="post_categories list-inline">
+      <div class="snippet_categories list-inline">
         <span>Tags: </span>
         {% for tag in page.tags %}
           <!-- <li><a href="/tags/{{ tag | downcase | downcase | url_escape | strip | replace: ' ', '-' }}/">{{ tag | camelcase }}</a></li> -->

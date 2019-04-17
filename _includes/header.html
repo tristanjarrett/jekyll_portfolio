@@ -4,6 +4,10 @@
     <div class="progress_container">
       <div class="progress_bar" id="progressBar"></div>
     </div>
+  {%- elsif page.layout == "snippet" -%}
+    <div class="progress_container">
+      <div class="progress_bar" id="progressBar"></div>
+    </div>
   {%- else -%}
     <!-- Don't display -->
   {%- endif -%}

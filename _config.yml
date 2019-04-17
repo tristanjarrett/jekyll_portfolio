@@ -6,6 +6,12 @@ description: Web Developer, Car Enthusiast & Coffeehead
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tristanjarrett.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Custom post types
+collections:
+  snippets:
+    output: true
+    permalink: /:collection/:title/
+
 # Dev settings
 sass:
   sass_dir: assets/css

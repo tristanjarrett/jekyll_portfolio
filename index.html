@@ -12,6 +12,7 @@ layout: home
   </div>
 
   <div class="content">
+
     <div class="posts_section">
       <div class="container-sm">
         <h3 class="title">Latest Articles</h3>
@@ -20,6 +21,21 @@ layout: home
           <li>
             <a href="{{ post.url | relative_url }}">
               <h4 class="item">{{ post.title | escape }}</h4>
+            </a>
+          </li>
+        {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+
+    <div class="snippets_section">
+      <div class="container-sm">
+        <h3 class="title">Recent Snippets</h3>
+        <ul class="list-unstyled">
+        {%- for snippet in site.snippets -%}
+          <li>
+            <a href="{{ snippet.url | relative_url }}">
+              <h4 class="item">{{ snippet.title | escape }}</h4>
             </a>
           </li>
         {%- endfor -%}
@@ -43,6 +59,7 @@ layout: home
         </ul>
       </div>
     </div>
+
   </div>
 
 </div>
