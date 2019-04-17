@@ -1,0 +1,19 @@
+---
+layout: page
+title: Snippets
+permalink: /snippets/
+---
+
+<div class="page_snippets">
+
+  <div class="container-sm">
+
+    {%- for snippet in site.snippets -%}
+      <a href="{{ snippet.url | relative_url }}">
+        <h4 class="item">{{ snippet.title | escape }}</h4>
+      </a>
+    {%- endfor -%}
+
+  </div>
+  
+</div>

@@ -4,6 +4,16 @@ title: Articles
 permalink: /articles/
 ---
 
-<div class="page_articles container-sm">
+<div class="page_articles">
+
+  <div class="container-sm">
+
+    {%- for post in site.posts -%}
+      <a href="{{ post.url | relative_url }}">
+        <h4 class="item">{{ post.title | escape }}</h4>
+      </a>
+    {%- endfor -%}
+
+  </div>
 
 </div>
