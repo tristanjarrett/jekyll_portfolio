@@ -18,7 +18,7 @@ layout: default
         <span>Tags: </span>
         {% for tag in page.tags %}
           <!-- <li><a href="/tags/{{ tag | downcase | downcase | url_escape | strip | replace: ' ', '-' }}/">{{ tag | camelcase }}</a></li> -->
-          <li>{{ tag | camelcase }}</li>
+          <a href="#">{{ tag | camelcase }}</a>
         {% endfor %}
       </div>
 
