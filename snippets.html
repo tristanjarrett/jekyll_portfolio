@@ -16,9 +16,13 @@ permalink: /snippets/
   <div class="container-sm">
 
     {%- for snippet in site.snippets -%}
-      <a href="{{ snippet.url | relative_url }}">
-        <h4 class="item">{{ snippet.title | escape }}</h4>
-      </a>
+
+      <h4 class="item">
+        <a href="{{ snippet.url | relative_url }}">
+          {{ snippet.title | escape }}
+        </a>
+      </h4>
+
     {%- endfor -%}
 
   </div>
