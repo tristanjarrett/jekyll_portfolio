@@ -6,7 +6,6 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  width: 100%;
   z-index: 1000;
   background-color: #ffffff;
   border-bottom: 1px solid #f3f3f3;
@@ -20,6 +19,7 @@
       height: 3px;
       background-color: $bg-color;
       width: 0%;
+      max-width: 100%;
     }
   }
 
