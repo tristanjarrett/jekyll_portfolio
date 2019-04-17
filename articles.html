@@ -17,11 +17,9 @@ permalink: /articles/
 
     {%- for post in site.posts -%}
 
-      <h4 class="item">
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h4>
+      <a href="{{ post.url | relative_url }}" class="item">
+        {{ post.title | escape }}
+      </a>
 
     {%- endfor -%}
 

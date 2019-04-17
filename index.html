@@ -19,8 +19,8 @@ layout: home
         <ul class="list-unstyled">
         {%- for post in site.posts -%}
           <li>
-            <a href="{{ post.url | relative_url }}">
-              <h4 class="item">{{ post.title | escape }}</h4>
+            <a href="{{ post.url | relative_url }}" class="item">
+              {{ post.title | escape }}
             </a>
           </li>
         {%- endfor -%}
@@ -34,8 +34,8 @@ layout: home
         <ul class="list-unstyled">
         {%- for snippet in site.snippets -%}
           <li>
-            <a href="{{ snippet.url | relative_url }}">
-              <h4 class="item">{{ snippet.title | escape }}</h4>
+            <a href="{{ snippet.url | relative_url }}" class="item">
+              {{ snippet.title | escape }}
             </a>
           </li>
         {%- endfor -%}
