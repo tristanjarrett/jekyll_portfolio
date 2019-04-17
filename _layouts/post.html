@@ -15,10 +15,9 @@ layout: default
       </div>
 
       <div class="post_categories list-inline">
-        <span>Tags: </span>
         {% for tag in page.tags %}
           <!-- <li><a href="/tags/{{ tag | downcase | downcase | url_escape | strip | replace: ' ', '-' }}/">{{ tag | camelcase }}</a></li> -->
-          <a href="#">{{ tag | camelcase }}</a>
+          <a href="#" class="tag">{{ tag | camelcase }}</a>
         {% endfor %}
       </div>
 
