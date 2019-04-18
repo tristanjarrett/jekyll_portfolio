@@ -1,23 +1,29 @@
 ---
 layout: snippet
-title: Add a scroll indicator with JavaScript
+title: How to create a scroll indicator with JavaScript
 slug: scroll-indicator-javascript
 author: Tristan Jarrett
 date: 2019-04-16 18:30:00 +0000
 tags: [JavaScript, CSS, HTML]
 ---
 
-#### HTML
+**Objective:** To add a progress bar along the top of our page when the user scrolls down the page.
+
+### HTML
+
+Add the following HTML to the section of your site that you want the bar to be positioned, in this case I am adding it to the header.
 
 ```html
-<div class="header">
+<header class="header">
   <div class="progress_container">
     <div class="progress_bar" id="progressBar"></div>
   </div>  
-</div>
+</header>
 ```
 
-#### CSS
+### CSS
+
+Add the following CSS in your sites stylesheet or in a style tag within your sites head tags.
 
 ```css
 .header {
@@ -40,7 +46,9 @@ tags: [JavaScript, CSS, HTML]
 }
 ```
 
-#### JavaScript
+### JavaScript
+
+Add the following script in your projects JavaScript file or inside a script tag just before you close your body tag.
 
 ```javascript
 window.onscroll = function() {
