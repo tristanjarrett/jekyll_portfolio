@@ -17,7 +17,7 @@ layout: default
       <div class="snippet_categories list-inline">
         {% for tag in page.tags %}
           <!-- <li><a href="/tags/{{ tag | downcase | downcase | url_escape | strip | replace: ' ', '-' }}/">{{ tag | camelcase }}</a></li> -->
-          <a href="#" class="tag">{{ tag | camelcase }}</a>
+          <a href="#" class="button-sm button-secondary-outline">{{ tag | camelcase }}</a>
         {% endfor %}
       </div>
 

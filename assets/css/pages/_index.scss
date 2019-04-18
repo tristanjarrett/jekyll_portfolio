@@ -2,7 +2,6 @@
  * Home
  */
 .page_index {
-  line-height: normal !important;
 
   .intro {
     padding: 2.5rem 0;
@@ -18,8 +17,6 @@
 
       .title {
         color: #555;
-        border-bottom: solid 1px $border-color;
-        padding-bottom: .75rem;
       }
       ul {
         li {
@@ -36,8 +33,6 @@
 
       .title {
         color: #555;
-        border-bottom: solid 1px $border-color;
-        padding-bottom: .75rem;
       }
       ul {
         li {
@@ -49,44 +44,6 @@
       }
     }
 
-    .projcts_section {
-
-      .title {
-        color: #555;
-        border-bottom: solid 1px $border-color;
-        padding-bottom: .75rem;
-      }
-
-      ul {
-        li {
-          border-bottom: solid 1px $border-color;
-          padding-bottom: 1rem;
-          margin-bottom: 1rem;
-          &:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-            margin-bottom: 0;
-          }
-
-          .project_head {
-            margin-bottom: .75rem;
-
-            .name {
-              font-weight: bold;
-            }
-
-            .link {
-              font-weight: bold;
-            }
-          }
-
-          .description {
-            color: #999;
-          }
-        }
-      }
-
-    }
   }
 
 }

@@ -15,7 +15,8 @@ layout: home
 
     <div class="posts_section">
       <div class="container-sm">
-        <h3 class="title">Latest Articles</h3>
+        <h2 class="title">Latest Articles</h2>
+        <hr>
         <ul class="list-unstyled">
         {%- for post in site.posts -%}
           <li>
@@ -30,7 +31,8 @@ layout: home
 
     <div class="snippets_section">
       <div class="container-sm">
-        <h3 class="title">Recent Snippets</h3>
+        <h2 class="title">Recent Snippets</h2>
+        <hr>
         <ul class="list-unstyled">
         {%- for snippet in site.snippets -%}
           <li>
@@ -39,23 +41,6 @@ layout: home
             </a>
           </li>
         {%- endfor -%}
-        </ul>
-      </div>
-    </div>
-
-    <div class="projcts_section">
-      <div class="container-sm">
-        <h3 class="title">Open Source Projects</h3>
-        <ul class="list-unstyled">
-          {% for project in site.data.projects %}
-          <li>
-            <div class="project_head">
-              <span class="name">{{ project.name }}</span>
-              <span class="link"><small>(<a href="{{ project.url }}">Source</a>)</small></span>
-            </div>
-            <div class="description">{{ project.description }}</div>
-          </li>
-          {% endfor %}
         </ul>
       </div>
     </div>

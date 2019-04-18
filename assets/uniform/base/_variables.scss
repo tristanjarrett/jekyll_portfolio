@@ -1,8 +1,8 @@
 // Colors
 
-$color-primary: #007bff;
+$color-primary: #0086e6;
 $color-primary-hover: darken($color-primary, 10%);
-$color-secondary: #e8e9ec;
+$color-secondary: #29de7d;
 $color-secondary-hover: darken($color-secondary, 10%);
 
 $background-primary: #ffffff;
@@ -13,8 +13,6 @@ $text-light: #ffffff;
 
 $button-text-primary: $text-light;
 $button-text-secondary: $text-dark;
-
-$border-color: #e1e1e1;
 
 $blockquote-theme: $color-primary;
 
@@ -64,7 +62,10 @@ $button-radius: .25rem;
 
 // Borders
 
-$border: solid 1px $border-color;
+$border-style: solid;
+$border-width: 2px;
+$border-color: #e1e1e1;
+$border: $border-style $border-width $border-color;
 
 // Blockquotes
 
