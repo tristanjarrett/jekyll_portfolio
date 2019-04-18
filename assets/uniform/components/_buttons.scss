@@ -15,19 +15,19 @@
 
 .button-sm {
   @extend %button;
-  padding: 0.50rem 1rem;
+  padding: 0.25rem .75rem;
   font-size: 0.85rem;
 }
 
 .button-md {
   @extend %button;
-  padding: 0.75rem 1.25rem;
+  padding: 0.50rem 1rem;
   font-size: 1rem;
 }
 
 .button-lg {
   @extend %button;
-  padding: 1rem 1.50rem;
+  padding: .75rem 1.25rem;
   font-size: 1.15rem;
 }
 
