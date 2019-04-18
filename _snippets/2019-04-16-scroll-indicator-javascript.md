@@ -9,7 +9,7 @@ tags: [JavaScript, CSS, HTML]
 
 #### HTML
 
-``` HTML
+```html
 <div class="header">
   <div class="progress_container">
     <div class="progress_bar" id="progressBar"></div>
@@ -19,7 +19,7 @@ tags: [JavaScript, CSS, HTML]
 
 #### CSS
 
-``` CSS
+```css
 .header {
   position: fixed;
   top: 0;
@@ -28,6 +28,7 @@ tags: [JavaScript, CSS, HTML]
 }
 .progress_container {
   position: absolute;
+  top: 0;
   width: 100%;
   background: transparent;
 }
@@ -41,7 +42,7 @@ tags: [JavaScript, CSS, HTML]
 
 #### JavaScript
 
-``` JavaScript
+```javascript
 window.onscroll = function() {
   scrollIndicator()
 };
