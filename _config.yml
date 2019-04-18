@@ -1,8 +1,8 @@
 # Core settings
 title: Tristan Jarrett
-email: hi@tristanjarrett.com
+email: hello@tristanjarrett.com
 author: Tristan Jarrett
-description: Web Developer, Car Enthusiast & Coffeehead
+description: Front-End Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tristanjarrett.com" # the base hostname & protocol for your site, e.g. http://example.com
 

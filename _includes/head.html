@@ -4,13 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
     {%- if page.layout == "post" -%}
-      {{ page.title }} - {{ site.title }}
+      {{ page.title }} – {{ site.title }}
     {%- elsif page.layout == "page" -%}
-      {{ page.title }} - {{ site.title }}
+      {{ page.title }} – {{ site.title }}
+    {%- elsif page.layout == "snippet" -%}
+      {{ page.title }} – {{ site.title }}
     {%- elsif page.layout == "error" -%}
-      {{ page.title }} - {{ site.title }}
+      {{ page.title }} – {{ site.title }}
     {%- else -%}
-      {{ site.title }} - {{ site.description }}
+      {{ site.title }} – {{ site.description }}
     {%- endif -%}
   </title>
   <link rel="stylesheet" href="/assets/css/main.css">
