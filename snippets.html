@@ -17,7 +17,7 @@ permalink: /snippets/
 
     {%- for snippet in site.snippets -%}
 
-      <a href="{{ snippet.url | relative_url }}" class="item">
+      <a href="{{ snippet.url | relative_url }}">
         {{ snippet.title | escape }}
       </a>
 

@@ -3,47 +3,34 @@
  */
 .page_index {
 
-  .intro {
-    padding: 2.5rem 0;
-    background-color: $color-secondary;
-    color: #fff;
+  %my_list {
+    .title {
+      color: #555;
+    }
+    ul {
+      li {
+        margin-bottom: 1rem;
+        a {
+          display: block;
+        }
+      }
+    }
   }
 
-  .content {
-    padding: 2.5rem 0;
+  .intro_section {
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
 
-    .posts_section {
-      margin-bottom: 2.5rem;
+  }
 
-      .title {
-        color: #555;
-      }
-      ul {
-        li {
-          margin-bottom: 1rem;
-          .item {
-            margin: 0;
-          }
-        }
-      }
-    }
+  .posts_section {
+    margin-bottom: 2.5rem;
+    @extend %my_list;
+  }
 
-    .snippets_section {
-      margin-bottom: 2.5rem;
-
-      .title {
-        color: #555;
-      }
-      ul {
-        li {
-          margin-bottom: 1rem;
-          .item {
-            margin: 0;
-          }
-        }
-      }
-    }
-
+  .snippets_section {
+    margin-bottom: 2.5rem;
+    @extend %my_list;
   }
 
 }
