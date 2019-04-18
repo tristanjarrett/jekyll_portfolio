@@ -14,8 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: $margin-1;
-  margin-bottom: $margin-1;
+  
 }
 h1 {
 
@@ -33,13 +32,12 @@ h5 {
 
 }
 h6 {
-  
+
 }
 
 // Paragraphs
 p {
-  margin-top: $margin-0;
-  margin-bottom: $margin-1;
+  line-height: 1.6;
 }
 
 // Horizontal line

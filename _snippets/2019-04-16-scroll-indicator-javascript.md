@@ -8,7 +8,7 @@ date: 2019-04-16 18:30:00 +0000
 tags: [JavaScript, CSS, HTML]
 ---
 
-**Objective:** To add a progress bar along the top of our page when the user scrolls down the page.
+**Objective:** To add a progress bar along the top of our window when the user scrolls down the page.
 
 ### HTML
 
