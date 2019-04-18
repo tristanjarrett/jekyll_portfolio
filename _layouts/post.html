@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <main class="template_post">
@@ -27,5 +28,13 @@ layout: default
     {{ content }}
 
   </article>
+
+  <div class="disqus">
+    <div class="container-sm">
+      {% if page.comments %}
+        {% include disqus.html %}
+      {% endif %}
+    </div>
+  </div>
 
 </main>

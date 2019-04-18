@@ -3,6 +3,7 @@ layout: snippet
 title: How to create a scroll indicator with JavaScript
 slug: scroll-indicator-javascript
 author: Tristan Jarrett
+comments: true
 date: 2019-04-16 18:30:00 +0000
 tags: [JavaScript, CSS, HTML]
 ---

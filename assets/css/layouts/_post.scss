@@ -2,7 +2,11 @@
  * Post
  */
 .template_post {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+
+  article {
+    margin-bottom: 2rem;
+  }
 
   .post_meta {
     color: #999;
@@ -15,5 +19,9 @@
       display: inline-block;
       font-size: .85rem;
     }
+  }
+  .disqus {
+    padding: 2.5rem 0;
+    background-color: #f7f7f9;
   }
 }

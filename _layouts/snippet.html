@@ -28,4 +28,12 @@ layout: default
 
   </article>
 
+  <div class="disqus">
+    <div class="container-sm">
+      {% if page.comments %}
+        {% include disqus.html %}
+      {% endif %}
+    </div>
+  </div>
+
 </main>
