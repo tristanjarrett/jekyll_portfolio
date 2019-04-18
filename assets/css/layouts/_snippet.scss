@@ -2,7 +2,7 @@
  * Snippet
  */
 .template_snippet {
-  padding-top: 1.5rem;
+  padding: 1.5rem 0;
 
   article {
     margin-bottom: 2rem;
@@ -12,6 +12,7 @@
     color: #999;
     margin-bottom: 1rem;
   }
+
   .snippet_categories {
     a.tag {
       background-color: #E1ECF4;
@@ -20,8 +21,5 @@
       font-size: .85rem;
     }
   }
-  .disqus {
-    padding: 1rem 0;
-    background-color: #f7f7f9;
-  }
+  
 }
