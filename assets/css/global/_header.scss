@@ -2,6 +2,8 @@
  * Header
  */
 
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 .global_header {
   position: sticky;
   position: -webkit-sticky;
@@ -54,6 +56,15 @@
     }
     .text {
       color: #999;
+      font-family: 'VT323', monospace !important;
+      font-size: 22px;
+      text-transform: lowercase;
+      &:before {
+        content: "</";
+      }
+      &:after {
+        content: ">";
+      }
     }
   }
 
