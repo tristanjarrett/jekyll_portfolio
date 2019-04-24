@@ -16,9 +16,10 @@ comments: true
       </div>
 
       <div class="post_categories list-inline">
+        <span>Tags: </span>
         {% for tag in page.tags %}
           <!-- <li><a href="/tags/{{ tag | downcase | downcase | url_escape | strip | replace: ' ', '-' }}/">{{ tag | camelcase }}</a></li> -->
-          <a href="#" class="button-sm button-secondary-outline">#{{ tag | downcase }}</a>
+          <span>#{{ tag | downcase }}</span>
         {% endfor %}
       </div>
 
