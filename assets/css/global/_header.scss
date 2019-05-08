@@ -57,12 +57,6 @@
       font-family: 'VT323', monospace !important;
       font-size: 22px;
       text-transform: lowercase;
-      &:before {
-        content: "</";
-      }
-      &:after {
-        content: ">";
-      }
       @media (max-width: 600px) {
         display: none;
       }
