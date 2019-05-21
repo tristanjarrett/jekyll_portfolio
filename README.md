@@ -7,6 +7,7 @@ Personal website running on Jekyll
 Run on a local server:
 
 ```
+gem install bundler jekyll
 git clone https://github.com/tristanjarrett/tristanjarrett.com
 cd tristanjarrett.com
 bundle install
