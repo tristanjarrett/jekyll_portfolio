@@ -1,9 +1,21 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body class="container-full">
 
-<main class="template_home">
+    <div class="row no-gutters">
 
-  {{ content }}
+      <div class="col-3">
+        {% include header-home.html %}
+      </div>
 
-</main>
+      <div class="col">
+        {{ content }}
+      </div>
+
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>
